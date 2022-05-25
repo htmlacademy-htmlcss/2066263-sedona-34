@@ -7,10 +7,10 @@
   <body>
   <header class="page-header">
     <nav class="navigation">
+      <a class="navigation-logo" href="index.html">
+        <img class="page-header-logo" alt="Логотип города Седона." src="#">
+      </a>
     <ul class="navigation-list">
-      <li class="navigation-item"></li>
-      <img class="logo" src="#" alt="Логотип города Седона.">
-     </li>
     <li class="navigation-item">
       <a class="navigation-link" href="index.html">Главная</a>
     </li>
@@ -117,8 +117,8 @@
       <button class="button" type="submit">ПРИМЕНИТЬ</button>
       <button class="button-off" type="submit">Сбросить</button>
    </form>
-  </header>
-  </section>
+ </section>
+</header>
   <section class="catalog">
     <h2 class="catalog-group">Найдено гостиниц: 38</h2>
     <select class="select-control" aria-label="Сортировка">
@@ -139,47 +139,47 @@
   <ul class="hotels-cards">
   <li class="hotel-card">
     <a class="hotel-card-link" href="#">
-      <img class="hotel-card-image" src="" href="#">
+      <img class="hotel-card-image" src="#" alt="Звездное небо в скальном просвете.">
       <h3 class="hotel-card-title">Amara Resort & Spa</h3>
     </a>
       <h4 class="hotel-card-type">Гостиница</h4>
       <b class="hotel-card-price">От 4000 ₽</b>
       <a class="hotel-card-button-all" href="#">ПОДРОБНЕЕ</a>
       <a class="hotel-card-button-elect" href="#">В ИЗБРАННОЕ</a>
-      <div class="hotels-rating-result" href="#">Рейтинг: 8,5</div>
+      <div class="hotels-rating-result">Рейтинг: 8,5</div>
     </li>
     <li class="hotel-card">
     <a class="hotel-card-link" href="#">
-      <img class="hotel-card-image" src="" href="#">
+      <img class="hotel-card-image" src="#" alt="Тучи и радуга над скалой.">
       <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
     </a>
       <h4 class="hotel-card-type">Гостиница</h4>
       <b class="hotel-card-price">От 5000 ₽</b>
       <a class="hotel-card-button-all" href="#">ПОДРОБНЕЕ</a>
       <a class="hotel-card-button-elect-in" href="#">В ИЗБРАННОМ</a>
-      <div class="hotels-rating-result" href="#">Рейтинг: 9,2</div>
+      <div class="hotels-rating-result">Рейтинг: 9,2</div>
     </li>
     <li class="hotel-card">
     <a class="hotel-card-link" href="#">
-      <img class="hotel-card-image" src="" href="#">
+      <img class="hotel-card-image" src="#" alt="Большая скала.">
       <h3 class="hotel-card-title">Desert Quail Inn</h3>
     </a>
       <h4 class="hotel-card-type">Гостиница</h4>
       <b class="hotel-card-price">От 2500 ₽</b>
       <a class="hotel-card-button-all" href="#">ПОДРОБНЕЕ</a>
       <a class="hotel-card-button-elect" href="#">В ИЗБРАННОЕ</a>
-      <div class="hotels-rating-result" href="#">Рейтинг: 6,9</div>
+      <div class="hotels-rating-result">Рейтинг: 6,9</div>
     </li>
     <li class="hotel-card">
     <a class="hotel-card-link" href="#">
-      <img class="hotel-card-image" src="" href="#">
+      <img class="hotel-card-image" src="#" alt="Звездное небо над скалами.">
       <h3 class="hotel-card-title">GreenTree Inn</h3>
     </a>
       <h4 class="hotel-card-type">Гостиница</h4>
       <b class="hotel-card-price">От 1500 ₽</b>
       <a class="hotel-card-button-all" href="#">ПОДРОБНЕЕ</a>
       <a class="hotel-card-button-elect" href="#">В ИЗБРАННОЕ</a>
-      <div class="hotels-rating-result" href="#">Рейтинг: 5,0</div>
+      <div class="hotels-rating-result">Рейтинг: 5,0</div>
     </li>
   </ul>
     <ul class="pagination">
@@ -210,22 +210,24 @@
   </select>
 </label>
     </main>
-    <section class="subscribe">
-      <h2>
+    <section class="subscribe-inner">
+      <h2 class="subscribe-inner">
         Подпишитесь на рассылку
       </h2>
       <p>
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
-      <form class="newletter-form" action="#" metod="post">
+      <form class="newletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newletter-email">Email</label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newletter-email" id="newletter-email" required>
           <button class="button newletter-button" type="submit">
             <span>ПОДПИСАТЬСЯ</span>
-      </button>
+          </button>
+        </form>
     </section>
     <footer class="page-footer">
       <section class="footer-social">
+        <h6 class="visually-hidden">Соц сети</h6>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="https://vk.com/htmlacademy">
@@ -245,6 +247,7 @@
         </ul>
       </section>
       <section class="footer-phone">
+       <h6 class="visually-hidden">Телефон</h6>
         <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
       <a class="navigation-link" href="https://htmlacademy.ru/"><img class="logo" src="#" alt="Логотип HTML-академии"></a>
