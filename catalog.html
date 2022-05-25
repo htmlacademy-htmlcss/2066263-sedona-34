@@ -62,7 +62,6 @@
     <fieldset class="hotels-filter-group">
       <legend class="hotels-filter-title">
         Инфраструктура:
-
       </legend>
 
       <ul class="hotels-filter-list">
@@ -108,7 +107,7 @@
             </li>
             <li class="hotels-filter-item">
           <label class="control">
-            <input class="control-input" type="radio" name="hotels-type" value="motel">
+            <input class="control-input" type="radio" name="hotels-type" value="apartments">
     
             Апартаменты
             </label>
@@ -117,9 +116,70 @@
     </fieldset>
       <button class="button" type="submit">ПРИМЕНИТЬ</button>
       <button class="button-off" type="submit">Сбросить</button>
+   </form>
+  </header>
   </section>
-
-</header>
+  <section class="catalog">
+    <h2 class="catalog-group">Найдено гостиниц: 38</h2>
+    <select class="select-control" aria-label="Сортировка">
+      <option value="popular">Сначала популярные</option>
+      <option value="cheap" selected>Сначала дешёвые</option>
+      <option value="expensive">Сначала дорогие</option>
+    </select>
+    <a href="#" class="button button-link-current">
+      <span class="visually-hidden">Показать карточки</span>
+    </a>
+    <a class="button" href="#">
+      <span class="visually-hidden">Показать поток</span>
+    </a>
+    <a class="button" href="#">
+      <span class="visually-hidden">Показать список</span>
+    </a>
+  </section class="hotels-cards">
+  <div class="hotel-card">
+    <a class="hotel-card-link" href="#">
+      <img class="hotel-card-image" src="" href="#">
+      <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+    </a>
+      <h4 class="hotel-card-type">Гостиница</h4>
+      <b class="hotel-card-price">От 4000 ₽</b>
+      <a class="hotel-card-button-all" href="#">ПОДРОБНЕЕ</a>
+      <a class="hotel-card-button-elect" href="#">В ИЗБРАННОЕ</a>
+      <a class="hotels-rating-result" href="#">Рейтинг: 8,5</a>
+    </div>
+    <div class="hotel-card">
+    <a class="hotel-card-link" href="#">
+      <img class="hotel-card-image" src="" href="#">
+      <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+    </a>
+      <h4 class="hotel-card-type">Гостиница</h4>
+      <b class="hotel-card-price">От 5000 ₽</b>
+      <a class="hotel-card-button-all" href="#">ПОДРОБНЕЕ</a>
+      <a class="hotel-card-button-elect-in" href="#">В ИЗБРАННОМ</a>
+      <a class="hotels-rating-result" href="#">Рейтинг: 9,2</a>
+    </div>
+    <div class="hotel-card">
+    <a class="hotel-card-link" href="#">
+      <img class="hotel-card-image" src="" href="#">
+      <h3 class="hotel-card-title">Desert Quail Inn</h3>
+    </a>
+      <h4 class="hotel-card-type">Гостиница</h4>
+      <b class="hotel-card-price">От 2500 ₽</b>
+      <a class="hotel-card-button-all" href="#">ПОДРОБНЕЕ</a>
+      <a class="hotel-card-button-elect" href="#">В ИЗБРАННОЕ</a>
+      <a class="hotels-rating-result" href="#">Рейтинг: 6,9</a>
+    </div>
+    <a class="hotel-card-link" href="#">
+      <img class="hotel-card-image" src="" href="#">
+      <h3 class="hotel-card-title">GreenTree Inn</h3>
+    </a>
+      <h4 class="hotel-card-type">Гостиница</h4>
+      <b class="hotel-card-price">От 1500 ₽</b>
+      <a class="hotel-card-button-all" href="#">ПОДРОБНЕЕ</a>
+      <a class="hotel-card-button-elect" href="#">В ИЗБРАННОЕ</a>
+      <a class="hotels-rating-result" href="#">Рейтинг: 5,0</a>
+    </div>
+    </section>
     </main>
 
   </body>
