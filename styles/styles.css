@@ -2,7 +2,7 @@
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
-  font-size: 400;
+  font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format(woff2);
   font-display: swap;
 }
@@ -10,7 +10,7 @@
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
-  font-size: 700;
+  font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format(woff2);
   font-display: swap;
 }
@@ -20,7 +20,7 @@ body {
   font-style: normal;
   font-size: 22px;
   line-height: 26px;
-  font-size: 400;
+  font-weight: 400;
   background-color: #FFFFFF;
   color: #000000;
 }
@@ -91,16 +91,17 @@ body {
   background-color: #82B3D3;
 }
 
-.advantages-list li:nth-child(2n) {
-  background-color: #f0f6fa;
-}
-
 .advantages-list li:nth-child(3) {
   background-color:#FFFFFF;
 }
+.advantages-list li:nth-child(2n) {
+   background-color: #f0f6fa; /*- работает, но код цвета оптимизированный из формата RGBA
+   background-color:rgba(131, 179, 211, 0.12); - не работает ((*/
+}
 
-.advantages-list li:nth-child(7) {
-  background-color:#e6f0f6;
+  .advantages-list li:nth-child(7) {
+  background-color:#e6f0f6; /*- работает, но код цвета оптимизированный из формата RGBA
+  background-color:rgba(131, 179, 211, 0.12); - не работает ((*/
 }
 
 .search-hotel {
@@ -113,6 +114,7 @@ background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-color: #82B3D3;
   text-align: center;
+  color: #FFFFFF;
 }
 
 .footer-phone {
@@ -125,13 +127,11 @@ background-color: #FFFFFF;
   text-decoration: none;
   color: #000000;
 }
-/*
+
  .button-search {
   font-size: 20px;
   line-height: 36px;
 }
-*/
-
 
 .newletter-button {
   font-size: 20px;
