@@ -1,0 +1,250 @@
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format(woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format(woff2);
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.navigation-link {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.main-index {
+  background-color: #82B3D3;
+  background-image: url("../images/sedona-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.divider {
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.hat {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.advantages-item {
+  color: #000000;
+  background-color: #82B3D3;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: none;
+  text-align: center;
+}
+
+.advantages-item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.with-photo {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.advantages-list li:nth-child(3) {
+  background-color:#FFFFFF;
+}
+.advantages-list li:nth-child(2n) {
+   background-color: #f0f6fa; /*- работает, но код цвета оптимизированный из формата RGBA
+   background-color:rgba(131, 179, 211, 0.12); - не работает ((*/
+}
+
+  .advantages-list li:nth-child(7) {
+  background-color:#e6f0f6; /*- работает, но код цвета оптимизированный из формата RGBA
+  background-color:rgba(131, 179, 211, 0.12); - не работает ((*/
+}
+
+.search-hotel {
+background-color: #FFFFFF;
+}
+
+.subscribe-index {
+  background-image: url("../images/background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #82B3D3;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.footer-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.page-footer a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ .button-search {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.newletter-button {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+}
+
+.subscribe-inner {
+  background-color: #FFFFFF;
+  text-align: center;
+  }
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFFFFF;
+}
+
+.breadcrumbs {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+}
+
+.control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hotels {
+  background-image: url("../images/background-filter.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #82B3D3;
+  background-repeat: no-repeat;
+}
+
+.hotels-filter-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.control {
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.button-app {
+  background-color: #82B3D3;
+}
+
+.button-reset {
+  color: #FFFFFF;
+  text-transform: none;
+  font-weight: 400;
+  background-color:transparent;
+}
+
+.hotel-card h3 {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: none;
+  color: black;
+}
+
+.hotel-card {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.hotel-card-link {
+  text-decoration: none;
+}
+
+.button-elect {
+  background-color: #82B3D3;
+}
+
+.button-elect-in {
+  background-color: #7DB54F;
+}
+
+.hotels-rating-result {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #F2F2F2;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  background-color: #82B3D3;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+
+
