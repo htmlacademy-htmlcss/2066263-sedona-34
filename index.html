@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="navigation">
         <div class="navigation-logo">
-          <img class="page-header-log" src="images/icons/logo-sedona-sity.svg" width="139" height="70" alt="Логотип города Седона.">
+          <img class="page-header-logo" src="images/icons/logo-sedona-sity.svg" width="139" height="70" alt="Логотип города Седона.">
         </div>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -37,7 +38,7 @@
           </a>
         </li>
         <li class="navigation-item navigation-user">
-          <a class="button button-all" href="#">
+          <a class="button button-want" href="#">
             Хочу сюда!
           </a>
         </li>
@@ -45,25 +46,23 @@
      </nav>
     </header>
     <main class="main-index">
-        <h1 class="visually-hidden">Седона - великолепный город Аризоны</h1>
-        <img class="welcome" src="images/icons/welcome-to-sedona.svg" width="458" height="352" alt="Седона приветствует вас.">
+          <h1 class="visually-hidden">Седона - великолепный город Аризоны</h1>
+          <img class="welcome" src="images/icons/welcome-to-sedona.svg" width="458" height="352" alt="Седона приветствует вас.">
         <section class="divider">
-           <h2>
+           <h2 class="divider-title hat">
             Седона — небольшой городок в Аризоне, заслуживающий большего!
            </h2>
-           <p>
+           <p class="divider-description">
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
            </p>
         </section>
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
           <ol class="advantages-list">
-            <li class="advantages-item">
+            <li class="advantages-item with-photo">
               <h3 class="advantages-title">Настоящий городок</h3>
               <p class="advantages-order">— №1 —</p>
               <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            </li>
-              <li class="advantages-item">
               <img class="city-1" src="images/Sedona-sity.jpg" width="800" height="384" alt="Городской пейзаж.">
               </li>
             <li class="advantages-item">
@@ -81,10 +80,8 @@
               <h3 class="advantages-title">Сувениры</h3>
               <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages-item with-photo">
               <img class="city-2" src="images/Devil-Bridge.jpg" width="800" height="384" alt="Мост из красных скал.">
-            </li>
-            <li class="advantages-item">
               <h3 class="advantages-title">Там есть мост дьявола</h3>
               <p class="advantages-order">— №2 —</p>
               <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -107,18 +104,18 @@
           </ol>
         </section>
         <section class="search-hotel">
-          <h2 class="search-hotel">
+          <h2 class="search-hotel hat">
             Заинтересовались?
           </h2>
            <p>
             Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
            </p>
-          <a class="button button-all" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+          <a class="button button-search" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
         </section>
       </main>
     <footer class="page-footer">
       <section class="subscribe-index">
-        <h2 class="subscribe-index">
+        <h2 class="subscribe-index hat">
           Подпишитесь на рассылку
         </h2>
         <p>
@@ -127,7 +124,7 @@
         <form class="newletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="newletter-email">Email</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="newletter-email" id="newletter-email" required>
-            <button class="button newletter-button" type="submit">
+            <button class="button newletter-button" type="submit" title="Подписаться">
               <span>Подписаться</span>
             </button>
         </form>
