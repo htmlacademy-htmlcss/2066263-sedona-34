@@ -15,7 +15,17 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  border-left: 40px solid #F2F2F2;
+  border-right: 40px solid #F2F2F2;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 22px;
@@ -23,6 +33,35 @@ body {
   font-weight: 400;
   background-color: #FFFFFF;
   color: #000000;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-start;
+  width: 1200px;
+  margin: 0;
+}
+
+navigation-logo {
+  width: 130px;
+  left: 70px;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 30px;
+  padding: 0;
+  width: 390px;
+}
+
+.navigation-user {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -44,9 +83,14 @@ body {
   text-decoration: none;
 }
 
-.main-index {
-  background-color: #82B3D3;
+.main-container {
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+.sedona {
   background-image: url("../images/sedona-background.jpg");
+  background-color: #82B3D3;
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
@@ -61,6 +105,11 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-item {
@@ -95,17 +144,23 @@ body {
   background-color:#FFFFFF;
 }
 .advantages-list li:nth-child(2n) {
-   background-color: #f0f6fa; /*- работает, но код цвета оптимизированный из формата RGBA
-   background-color:rgba(131, 179, 211, 0.12); - не работает ((*/
+   /* background-color: #f0f6fa; */
+   background-color:rgba(131, 179, 211, 0.12);
 }
 
   .advantages-list li:nth-child(7) {
-  background-color:#e6f0f6; /*- работает, но код цвета оптимизированный из формата RGBA
-  background-color:rgba(131, 179, 211, 0.12); - не работает ((*/
+  /* background-color:#e6f0f6; */
+  background-color:rgba(131, 179, 211, 0.12);
 }
 
 .search-hotel {
-background-color: #FFFFFF;
+  display: flex;
+  padding: 0 auto;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
 }
 
 .subscribe-index {
