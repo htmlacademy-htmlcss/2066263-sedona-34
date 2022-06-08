@@ -3,7 +3,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format(woff2);
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -11,7 +11,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format(woff2);
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -96,14 +96,16 @@ body {
 }
 
 .welcome {
-  display: block;
+  display: flex;
   margin: 0 auto;
-  Width: 458px;
+  width: 458px;
   padding: 51px 371px 82px;
   text-align: center;
 }
 
 .divider {
+  margin: 0 auto;
+  width: 1200px;
   background-color: #FFFFFF;
   text-align: center;
 }
@@ -180,15 +182,42 @@ body {
   color: #FFFFFF;
 }
 
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+}
+
+.footer-social {
+  max-width: 150px;
+  margin: auto;
+  margin-left: 70px;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
 .footer-phone {
+  display: block;
+  /* padding-left: 250px;
+  padding-right: 236px; */
+  width: 720px;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
 }
 
 .page-footer a {
+  display: block;
+  padding-right: 70px;
   text-decoration: none;
   color: #000000;
+}
+
+.logo-footer {
+  display: block;
+  width: 115px;
+  margin: auto;
 }
 
  .button-search {
@@ -222,6 +251,9 @@ body {
 
 .breadcrumbs-link {
   color: inherit;
+}
+.hotels-filter {
+  display: flex;
 }
 
 .control {
