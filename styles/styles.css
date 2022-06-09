@@ -165,7 +165,7 @@ body {
 
 .search-hotel {
   display: flex;
-  padding: 0 auto;
+  padding: 0;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
