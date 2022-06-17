@@ -49,6 +49,7 @@ body {
 
 .navigation {
   display: flex;
+  flex-wrap: wrap;
   width: 1200px;
   height: 65px;
   margin: 0 auto;
@@ -98,6 +99,7 @@ body {
 
 .navigation-user-item .navigation-link {
   display: flex;
+  flex-wrap: wrap;
   min-width: 20px;
   min-height: 20px;
   margin-right: 20px;
@@ -149,7 +151,6 @@ body {
   margin: 0 auto;
   background-color: #FFFFFF;
   text-align: center;
-  padding: 0 auto;
 }
 
 .divider-title {
@@ -280,7 +281,6 @@ body {
 .subscribe-index h2 {
   display: block;
   margin: 0 auto;
-  padding: 0 auto;
   padding-bottom: 30px;
 }
 
@@ -610,7 +610,6 @@ body {
 .subscribe-inner h2 {
   display: block;
   margin: 0 auto;
-  padding: 0 auto;
   text-transform: uppercase;
   padding-bottom: 30px;
 }
