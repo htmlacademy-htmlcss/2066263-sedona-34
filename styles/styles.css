@@ -55,6 +55,7 @@ body {
 }
 
 .navigation-logo {
+  position: relative;
   display: block;
   width: 139px;
   margin: 0;
@@ -95,9 +96,13 @@ body {
   text-decoration: none;
 }
 
-.navigation-user .navigation-link {
-  min-width: 16px;
-  min-height: 22px;
+.navigation-user-item .navigation-link {
+  display: flex;
+  min-width: 20px;
+  min-height: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #7DB54F;
 }
 
 .button {
@@ -128,24 +133,23 @@ body {
   background-color: #82B3D3;
   background-size: 100% auto;
   background-repeat: no-repeat;
-  border: solid transparent;
-  border-width: 0 0 57px;
-  border-image:url("../images/icons/welcome-bottom-border.svg");
 }
 
 .welcome {
   margin: 0 auto;
-  width: 458px;
-  height: 352px;
-  padding: 51px 371px 82px;
+  padding: 50px 371px 78px;
+}
+
+.welcome::after {
+ content: url("../images/icons/welcome-bottom-border.svg"); /*пока не запускается, нужно доработать*/
 }
 
 .divider {
+  display: block;
   margin: 0 auto;
-  height: 282px;
-  width: 1200px;
   background-color: #FFFFFF;
   text-align: center;
+  padding: 0 auto;
 }
 
 .divider-title {
@@ -156,9 +160,10 @@ body {
 }
 
 .divider-description {
-  margin: auto;
+  display: block;
+  margin: 0 auto;
   margin-top: 30px;
-  width: 654px;
+  padding-bottom: 90px;
 }
 
 .hat {
@@ -273,8 +278,10 @@ body {
 }
 
 .subscribe-index h2 {
-  margin-top: 0;
-  margin-bottom: 30px;
+  display: block;
+  margin: 0 auto;
+  padding: 0 auto;
+  padding-bottom: 30px;
 }
 
 .subscribe-index p {
@@ -282,15 +289,22 @@ body {
   width: 600px;
   height: 52px;
   margin: 0 auto;
-  padding-bottom: 46px;
+  padding-bottom: 30px;
 }
 
-.newletter-form {
+.field {
   width: 600px;
   height: 60px;
   margin: 0 auto;
-  background-color: #82B3D3;
+  background-color: #FFFFFF;
   border-radius: 4px;
+}
+
+.newletter-button {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 12px 15px;
+  border: none;
 }
 
 .page-footer-container {
@@ -346,15 +360,11 @@ body {
   background-color: #82B3D3;
 }
 
-.subscribe-inner {
-  background-color: #FFFFFF;
-  text-align: center;
-}
-
 .inner-header-title {
   width: 495px;
   padding: 35px 0 0 70px;
   margin: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -362,17 +372,21 @@ body {
 }
 
 .breadcrumbs {
+  display: flex;
   color: #FFFFFF;
   font-size: 16px;
   line-height: 21px;
+  margin: 0;
+  padding: 0;
   margin-left: 70px;
-  width: 110px;
+  /* width: 110px; */
   list-style: none;
 }
 
-.breadcrumbs-link {
+.breadcrumbs-item {
   color: inherit;
   display: inline;
+  margin-right: 32px;
 }
 
 .hotels-filter {
@@ -435,12 +449,17 @@ body {
 }
 
 .filter-buttons {
+  ;
   width: 160px;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 .button-app {
+  display: block;
   background-color: #82B3D3;
+  padding: 9px 15px;
+  margin-bottom: 20px;
+  border: none;
 }
 
 .button-reset {
@@ -448,13 +467,36 @@ body {
   text-transform: none;
   font-weight: 400;
   background-color:transparent;
+  border: none;
 }
 
 .catalog {
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   width: 1057px;
   margin: 50px 72px;
+}
+
+.catalog h2 {
+  margin: 0;
+}
+
+.sorting-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-control {
+  width: 290px;
+  margin-right: 80px;
+}
+
+.catalog .button {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  background-color: #7DB54F;
 }
 
 .hotels-cards {
@@ -505,9 +547,11 @@ body {
   width: 1057px;
   display: flex;
   justify-content: space-between;
-  margin: 0 72px;
+  margin: 30px 72px;
 }
+
 .pagination {
+  display: flex;
   width: 400px;
   padding: 0;
   margin: 0;
@@ -515,11 +559,17 @@ body {
 
 .pagination-item {
   display: inline-block;
+  padding: 12px 24px;
+  border-radius: 4px;
+  background-color: #82B3D3;
 }
 
-.cards-number {
-  width: 386px;
-  padding: 0;
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-item:first-child {
+  background-color: #F2F2F2;
 }
 
 .pagination-link {
@@ -537,5 +587,39 @@ body {
   background-color: #F2F2F2;
 }
 
+.cards-number {
+  display: flex;
+  justify-content: space-between;
+  width: 386px;
+  padding: 0;
+  align-items: center;
+}
 
+.select-cards {
+  min-width: 160px;
+  font-size: 18px;
+  padding: 14px 20px;
+}
+
+.subscribe-inner {
+  background-color: #FFFFFF;
+  text-align: center;
+  margin: 94px auto;
+}
+
+.subscribe-inner h2 {
+  display: block;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.subscribe-inner p {
+  display: block;
+  width: 600px;
+  height: 52px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
 
