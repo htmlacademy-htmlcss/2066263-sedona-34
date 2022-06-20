@@ -36,33 +36,56 @@ body {
   color: #000000;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .navigation {
   display: flex;
+  flex-wrap: wrap;
   width: 1200px;
-  margin: 0;
+  height: 65px;
+  margin: 0 auto;
 }
 
 .navigation-logo {
+  position: relative;
   display: block;
+  width: 139px;
+  margin: 0;
   margin-left: 70px;
   padding: 0;
+  margin-bottom: -10px;
 }
 
 .navigation-list {
   display: flex;
-  justify-content: space-around;
-  width: 490px;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  width: 520px;
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-left: 30px;
 }
 
 .navigation-user {
   display: flex;
+  justify-content: end;
+  align-items: center;
   width: 300px;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
+  height: 66px;
+  margin: 0 auto;
+  margin-right: 70px;
+  list-style: none;
 }
 
 .navigation-link {
@@ -70,7 +93,18 @@ body {
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
+  padding: 20px 17px;
   text-decoration: none;
+}
+
+.navigation-user-item .navigation-link {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 20px;
+  min-height: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #7DB54F;
 }
 
 .button {
@@ -82,6 +116,14 @@ body {
   text-transform: uppercase;
   border-radius: 4px;
   text-decoration: none;
+}
+
+.button-want {
+  display: block;
+  width: 130px;
+  height: 20px;
+  padding: 9px 15px;
+  text-align: center;
 }
 
 .main-container {
@@ -96,18 +138,33 @@ body {
 }
 
 .welcome {
-  display: flex;
   margin: 0 auto;
-  width: 458px;
-  padding: 51px 371px 82px;
-  text-align: center;
+  padding: 50px 371px 78px;
+}
+
+.welcome::after {
+ content: url("../images/icons/welcome-bottom-border.svg"); /*пока не запускается, нужно доработать*/
 }
 
 .divider {
+  display: block;
   margin: 0 auto;
-  width: 1200px;
   background-color: #FFFFFF;
   text-align: center;
+}
+
+.divider-title {
+  display: block;
+  margin: 0 auto;
+  padding-top: 63px;
+  width: 620px;
+}
+
+.divider-description {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-bottom: 90px;
 }
 
 .hat {
@@ -120,57 +177,95 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .advantages-item {
   color: #000000;
-  background-color: #82B3D3;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-transform: none;
   text-align: center;
+  width: 230px;
+  height: 179px;
+  padding: 102px 85px;
 }
 
-.advantages-item h3 {
+.advantages-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  max-width: 180px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.advantages-icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .advantages-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  padding: 0;
 }
 
-.with-photo {
+.area {
+  background-color:rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item.with-photo {
   color: #FFFFFF;
   background-color: #82B3D3;
 }
 
-.advantages-list li:nth-child(3) {
+.advantages-list li:nth-child(4) {
   background-color:#FFFFFF;
 }
-.advantages-list li:nth-child(2n) {
-   /* background-color: #f0f6fa; */
-   background-color:rgba(131, 179, 211, 0.12);
-}
 
-  .advantages-list li:nth-child(7) {
-  /* background-color:#e6f0f6; */
-  background-color:rgba(131, 179, 211, 0.12);
+.road {
+  background-color:rgba(131, 179, 211, 0.2);
 }
 
 .search-hotel {
-  display: flex;
-  padding: 0;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  margin: 0 auto;
+  /* height: 417px; */
+  width: 1200px;
   background-color: #FFFFFF;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search-hotel.hat {
+  padding-top: 91px;
+  width: 297px;
+}
+
+.search-hotel p {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 592px;
+}
+
+.button-search {
+  display: block;
+  margin: 0 auto;
+  margin-top: 56px;
+  margin-bottom: 93px;
+  font-size: 20px;
+  line-height: 36px;
+  width: 544px;
+  padding: 12px 15px;
 }
 
 .subscribe-index {
@@ -180,13 +275,45 @@ body {
   background-color: #82B3D3;
   text-align: center;
   color: #FFFFFF;
+  padding: 94px 0;
+}
+
+.subscribe-index h2 {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.subscribe-index p {
+  display: block;
+  width: 600px;
+  height: 52px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.field {
+  width: 600px;
+  height: 60px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.newletter-button {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 12px 15px;
+  border: none;
 }
 
 .page-footer-container {
   display: flex;
   width: 1060px;
+  height: 120px;
   padding: 0 70px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .footer-social {
@@ -195,13 +322,27 @@ body {
 }
 
 .footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+.footer-social-item {
+  width: 24px;
+  height: 14px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #7DB54F;
+}
+
+.footer-social-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .footer-phone {
-  display: block;
-  width: 720px;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
@@ -209,20 +350,8 @@ body {
 
 .page-footer a {
   display: block;
-  padding-right: 70px;
   text-decoration: none;
   color: #000000;
-}
-
-.logo-footer {
-  display: block;
-  width: 115px;
-  margin: 0;
-}
-
- .button-search {
-  font-size: 20px;
-  line-height: 36px;
 }
 
 .newletter-button {
@@ -231,15 +360,11 @@ body {
   background-color: #82B3D3;
 }
 
-.subscribe-inner {
-  background-color: #FFFFFF;
-  text-align: center;
-}
-
 .inner-header-title {
   width: 495px;
   padding: 35px 0 0 70px;
   margin: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -247,17 +372,21 @@ body {
 }
 
 .breadcrumbs {
+  display: flex;
   color: #FFFFFF;
   font-size: 16px;
   line-height: 21px;
+  margin: 0;
+  padding: 0;
   margin-left: 70px;
-  width: 110px;
+  /* width: 110px; */
   list-style: none;
 }
 
-.breadcrumbs-link {
+.breadcrumbs-item {
   color: inherit;
   display: inline;
+  margin-right: 32px;
 }
 
 .hotels-filter {
@@ -320,12 +449,17 @@ body {
 }
 
 .filter-buttons {
+  ;
   width: 160px;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 .button-app {
+  display: block;
   background-color: #82B3D3;
+  padding: 9px 15px;
+  margin-bottom: 20px;
+  border: none;
 }
 
 .button-reset {
@@ -333,13 +467,36 @@ body {
   text-transform: none;
   font-weight: 400;
   background-color:transparent;
+  border: none;
 }
 
 .catalog {
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   width: 1057px;
   margin: 50px 72px;
+}
+
+.catalog h2 {
+  margin: 0;
+}
+
+.sorting-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-control {
+  width: 290px;
+  margin-right: 80px;
+}
+
+.catalog .button {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  background-color: #7DB54F;
 }
 
 .hotels-cards {
@@ -390,9 +547,11 @@ body {
   width: 1057px;
   display: flex;
   justify-content: space-between;
-  margin: 0 72px;
+  margin: 30px 72px;
 }
+
 .pagination {
+  display: flex;
   width: 400px;
   padding: 0;
   margin: 0;
@@ -400,11 +559,17 @@ body {
 
 .pagination-item {
   display: inline-block;
+  padding: 12px 24px;
+  border-radius: 4px;
+  background-color: #82B3D3;
 }
 
-.cards-number {
-  width: 386px;
-  padding: 0;
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-item:first-child {
+  background-color: #F2F2F2;
 }
 
 .pagination-link {
@@ -422,5 +587,38 @@ body {
   background-color: #F2F2F2;
 }
 
+.cards-number {
+  display: flex;
+  justify-content: space-between;
+  width: 386px;
+  padding: 0;
+  align-items: center;
+}
 
+.select-cards {
+  min-width: 160px;
+  font-size: 18px;
+  padding: 14px 20px;
+}
+
+.subscribe-inner {
+  background-color: #FFFFFF;
+  text-align: center;
+  margin: 94px auto;
+}
+
+.subscribe-inner h2 {
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.subscribe-inner p {
+  display: block;
+  width: 600px;
+  height: 52px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
 
