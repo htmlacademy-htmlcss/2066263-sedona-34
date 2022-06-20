@@ -114,6 +114,7 @@ body {
   color: #FFFFFF;
   background-color: #756157;
   text-transform: uppercase;
+  padding: 9px 15px;
   border-radius: 4px;
   text-decoration: none;
 }
@@ -360,6 +361,10 @@ body {
   background-color: #82B3D3;
 }
 
+.sorting-container .button {
+  padding: 0;
+}
+
 .inner-header-title {
   width: 495px;
   padding: 35px 0 0 70px;
@@ -379,7 +384,7 @@ body {
   margin: 0;
   padding: 0;
   margin-left: 70px;
-  /* width: 110px; */
+  margin-bottom: 40px;
   list-style: none;
 }
 
@@ -392,13 +397,13 @@ body {
 .hotels-filter {
   display: flex;
   width: 1060px;
-  justify-content: flex-start;
-  margin: 0 70px;
+  justify-content: space-between;
+  margin-left: 70px;
 }
 
 .hotels-filter-group {
-  width: 150px;
   padding: 0;
+  border-style: none;
 }
 
 .control-input {
@@ -429,12 +434,12 @@ body {
 }
 
 .hotels-filter-list {
+  display: grid;
+  grid-template-columns: 150px;
   list-style: none;
-}
-
-.hotels-filter-list ul {
-  margin: 0;
   padding: 0;
+  padding-bottom: 70px;
+  margin-right: 70px;
 }
 
 .control {
@@ -444,20 +449,18 @@ body {
 
 .price-setting {
   color: #FFFFFF;
-  margin: 0 240px auto 175px;
+  margin: 0;
   width: 290px;
 }
 
 .filter-buttons {
-  ;
-  width: 160px;
-  margin: 0 auto;
+  margin: 0;
+  margin-top: 34px;
 }
 
 .button-app {
   display: block;
   background-color: #82B3D3;
-  padding: 9px 15px;
   margin-bottom: 20px;
   border: none;
 }
@@ -468,6 +471,9 @@ body {
   font-weight: 400;
   background-color:transparent;
   border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
 
 .catalog {
@@ -500,16 +506,17 @@ body {
 }
 
 .hotels-cards {
-  display: flex;
-  width: 1056px;
-  flex-wrap: wrap;
-  margin: auto 73px auto 71px;
-  gap: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  column-gap: 18px;
+  margin: 60px 72px 96px;
+  padding: 0;
 }
 
 .hotel-card h3 {
   font-size: 24px;
   line-height: 28px;
+  padding: 16px auto;
   text-transform: none;
   color: black;
 }
@@ -517,10 +524,28 @@ body {
 .hotel-card {
   font-weight: 400;
   font-size: 18px;
-  width: 340px;
   line-height: 21px;
   color: #333333;
   list-style: none;
+  padding: 20px;
+}
+
+.hotels-type,
+.hotels-price {
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-card-detail {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  row-gap: 16px;
+  column-gap: 20px;
+}
+
+.hotels-rating-result {
+  padding: 8px 22px;
+  border-radius: 4px;
 }
 
 .hotel-card-link {
