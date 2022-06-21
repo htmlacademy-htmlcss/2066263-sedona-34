@@ -100,14 +100,13 @@ body {
 .navigation-user-item .navigation-link {
   display: flex;
   flex-wrap: wrap;
-  min-width: 20px;
-  min-height: 20px;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background-color: #7DB54F;
 }
 
 .button {
+  display: block;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -120,11 +119,9 @@ body {
 }
 
 .button-want {
-  display: block;
   width: 130px;
-  height: 20px;
-  padding: 9px 15px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .main-container {
@@ -191,8 +188,7 @@ body {
   text-transform: none;
   text-align: center;
   width: 230px;
-  height: 179px;
-  padding: 102px 85px;
+  padding: 90px 85px;
 }
 
 .advantages-title {
@@ -203,7 +199,10 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 30px;
+}
+
+.advantages-photo {
+  vertical-align: middle;
 }
 
 .advantages-icon {
@@ -217,15 +216,22 @@ body {
   font-size: 18px;
   line-height: 21px;
   padding: 0;
+  margin: 0;
 }
 
 .area {
   background-color:rgba(131, 179, 211, 0.12);
 }
 
+.advantages-order {
+  display: inline-block;
+  margin: 30px auto;
+}
+
 .advantages-item.with-photo {
   color: #FFFFFF;
   background-color: #82B3D3;
+  padding: 92px 85px;
 }
 
 .advantages-list li:nth-child(4) {
@@ -239,7 +245,6 @@ body {
 .search-hotel {
   display: block;
   margin: 0 auto;
-  /* height: 417px; */
   width: 1200px;
   background-color: #FFFFFF;
   margin: 0 auto;
@@ -288,7 +293,7 @@ body {
 .subscribe-index p {
   display: block;
   width: 600px;
-  height: 52px;
+  /* height: 52px; */
   margin: 0 auto;
   padding-bottom: 30px;
 }
@@ -311,7 +316,7 @@ body {
 .page-footer-container {
   display: flex;
   width: 1060px;
-  height: 120px;
+  min-height: 120px;
   padding: 0 70px;
   align-items: center;
   justify-content: space-between;
@@ -325,15 +330,12 @@ body {
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
-  align-self: center;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.footer-social-item {
-  width: 24px;
-  height: 14px;
+.footer-social-item .button {
   margin-right: 10px;
   margin-bottom: 10px;
   background-color: #7DB54F;
