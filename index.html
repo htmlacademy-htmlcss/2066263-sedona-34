@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico">
     <title>Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
@@ -83,7 +84,7 @@
             <li class="advantages-item food">
               <img class="advantages-icon" src="images/icons/burger.svg" width="74" height="70" alt="Местная еда.">
               <h3 class="advantages-title">Еда</h3>
-              <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="advantages-description">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
             </li>
             <li class="advantages-item area gift">
               <img class="advantages-icon" src="images/icons/gift.svg" width="64" height="76" alt="Подарочки.">
@@ -122,7 +123,7 @@
           <p>
            Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a class="button button-search" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+          <a class="button button-search" href="#">ПОИСК ГОСТИНИЦЫ В седоне  </a>
         </section>
       </main>
       <section class="subscribe-index">
@@ -189,12 +190,12 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
               <label class="comment-date check-in" for="check-in">Дата заезда:</label>
-              <input class="field-date" type="text" id="check-in" name="check-in" placeholder="Укажите дату" value="27 апреля 2020">
+              <input class="field-date" type="text" id="check-in" name="check-in" placeholder="Укажите дату">
             </p>
             <span class="modal-date error">Мы не можем отправить вас в прошлое.</span>
             <p class="field-group">
               <label class="comment-date" for="search-departure">Дата выезда:</label>
-              <input class="field-date search-departure" type="text" id="search-departure" name="search-departure" placeholder="Укажите дату" value="1 сентября 2021">
+              <input class="field-date search-departure" type="text" id="search-departure" name="search-departure" placeholder="Укажите дату">
             </p>
             <span class="modal-date">На эти даты есть свободные номера. Пока есть.</span>
             <section class="guests">
@@ -202,18 +203,31 @@
               <div class="guests-adults">
                 <label class="adults" for="adults">Взрослые:</label>
                   <div class="window">
-                      <button class="button-guests disabled">-</button>
-                     <input class="amount" type="text" id="adults" name="adults" placeholder="2">
-                      <button class="button-guests plus">+</button>
-                  </div>
+                    <button class="button-guests minus">
+                      <svg class="guests-symbol" aria-hidden="true" focusable="false" <svg width="15" height="2" viewBox="0 0 15 2" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M.1 0v2h14V0H.1Z"/>
+                      </svg>
+                    </button>
+                      <input class="amount" type="text" id="adults" name="adults" placeholder="2">
+                      <button class="button-guests plus">
+                        <svg class="guests-symbol" aria-hidden="true" focusable="false" <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"></svg>
+                      </button>
               </div>
               <div class="guests-children">
                 <label class="children" for="children">Дети:</label>
-                <span class="children-info"></span>
+                  <button class="children-info" type="button" aria-labelledby="tooltip-label">i</button>
+                <span class="tooltip">
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей,<br>которые будут с вами, возраст<br>которых от 6 до 18 лет. Дети<br>до 6 лет размещаются бесплатно.</span>
+                </span>
+                </span>
                 <div class="window">
-                    <button class="button-guests minus">-</button>
+                    <button class="button-guests minus">
+                      <svg class="guests-symbol" aria-hidden="true" focusable="false" <svg width="15" height="2" viewBox="0 0 15 2" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M.1 0v2h14V0H.1Z"/>
+                      </svg>
+                    </button>
                     <input class="amount" type="text" id="children" name="children" placeholder="1">
-                    <button class="button-guests plus">+</button>
+                    <button class="button-guests plus">
+                      <svg class="guests-symbol" aria-hidden="true" focusable="false" <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"></svg>
+                    </button>
                 </div>
               </div>
             </section>
