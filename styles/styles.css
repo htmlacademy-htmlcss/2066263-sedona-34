@@ -1233,13 +1233,13 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 4px;
 }
 
-.range-wrapper-inputs label:last-child .range-input {
+.max-price {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   margin-left: -1px;
 }
 
-.range-wrapper-inputs label:first-child .range-input  {
+.min-price {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -1283,7 +1283,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .button-reset {
   color: #FFFFFF;
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
